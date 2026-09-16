@@ -190,13 +190,13 @@ Y' = (Y - K) / (1 - K)
 Определяется исходная чёрная составляющая:
 
 ```text
-Kraw = min(C, M, Y)
+K_raw = min(C, M, Y)
 ```
 
 При превышении установленного порога рассчитывается:
 
 ```text
-K = Kraw * (Kraw - threshold) / (1 - threshold)
+K = K_raw * (K_raw - threshold) / (1 - threshold)
 ```
 
 После этого:
